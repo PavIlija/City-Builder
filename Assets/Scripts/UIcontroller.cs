@@ -23,8 +23,8 @@ public class UIcontroller : MonoBehaviour
     public void UpdateCityData()
     {
         cityText.text = string.Format("Jobs: {0}/{1}\nCash: {2}\nPopulation: {3}/{4}\nFood: {5}",
-            city.JobsCurrent, city.JobsCeiling, city.Cash, city.PopulationCurrent, 
-            city.PopulationCeiling, city.Food);
+            city.JobsCurrent, city.JobsCeiling, city.Cash, (int)city.PopulationCurrent, 
+            (int)city.PopulationCeiling, (int)city.Food);
     }
 
     public void UpdateDayCount()
